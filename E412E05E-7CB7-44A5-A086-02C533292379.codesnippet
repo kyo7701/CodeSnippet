@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>l</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)logout {
+    [OPAlertView AlertWithTitle:nil message:@"确定要退出登录嘛?" cancelButtonTitle:@"确定" otherButtonTitle:@"取消" withCompletionBlock:^(DQAlertView *alert, NSInteger buttonIndex) {
+        if (buttonIndex == 1) {
+            [self switchToLoginWithCompletionBlock:^{
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            }];
+        }
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E412E05E-7CB7-44A5-A086-02C533292379</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>logout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

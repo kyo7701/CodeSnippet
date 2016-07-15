@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>b</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSString *)baseurl {
+  NSString *suffix = @":8081/Examples/Movies/MoviesApp.ios.bundle?platform=ios&amp;dev=true";
+  NSString *prefixOS = @"http://192.168.21.102";
+  NSString *prefixSimulator = @"http://localhost";
+  #if TARGET_IPHONE_SIMULATOR//模拟器
+  NSLog(@"模拟器");
+  return [prefixSimulator stringByAppendingString:suffix];
+  #elif TARGET_OS_IPHONE//真机
+  NSLog(@"真机");
+  return [prefixOS stringByAppendingString:suffix];
+  #endif
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>503FD09B-B044-4170-A654-0AF20FF837A2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>baseUrl </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
