@@ -4,14 +4,13 @@ This repo used to Backup the code snippets.
 
 #### Install
 
-1. open shell 
-2. clone this repo 
-3. 
+1. clone this repo 
+2. run the following code
 
 ```
-cd ~/Library/Developer/Xcode/UserData/CodeSnippets
-mv -p
+./install.sh
 
 ```
+
 
 
